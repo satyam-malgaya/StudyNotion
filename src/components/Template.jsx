@@ -1,6 +1,6 @@
 import React from "react";
 import SignupForm from "./SignupForm";
-import LoginForm from "./Loginform";
+import LoginForm from "./LoginForm.jsx";
 import framimg from "../assets/frame.png";
 import { FcGoogle } from "react-icons/fc";
 
@@ -23,7 +23,6 @@ const Template = ({ title, desc1, desc2, image, formtype, setisLoggedIn }) => {
         ) : (
           <LoginForm setisLoggedIn={setisLoggedIn} />
         )}
-
 
         {/* OR separator */}
         <div className="flex w-full items-center my-4 gap-x-2">
